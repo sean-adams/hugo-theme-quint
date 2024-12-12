@@ -8,7 +8,7 @@
     --borders: #555;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     :root {
         --primary-bg: #252627;
         --primary-text: #fff;
@@ -19,7 +19,7 @@
     img {
         opacity: 90%;
     }
-}
+} */
 
 /* Font Faces */
 @font-face {
@@ -216,10 +216,17 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    mix-blend-mode: multiply;
 }
 
 header .logo img {
     height: 50px;
+}
+
+main {
+    padding: 0 24px;
 }
 
 /* Hero Section Styles */
@@ -231,6 +238,7 @@ header .logo img {
     justify-content: center;
     align-items: center;
     text-align: center;
+    height: 100vh;
 }
 
 .hero div {
@@ -387,7 +395,7 @@ ul.search-results li a {
 /* Footer Styles */
 footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 20px;
     color: var(--primary-text);
@@ -398,12 +406,12 @@ footer div {
     min-width: 5rem;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     footer .social-media a,
     footer .social-media a img {
         filter: brightness(50%) invert(75%);
     }
-}
+} */
 
 footer .social-media a img {
     height: 20px;
